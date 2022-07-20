@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+@media only screen and (max-width : 426px){
+
+
+body{
+    background-color: black;
+    color: white;
+}
+
+#navbar a{
+    color: white;
+    font-family: monospace;
+}
+
+#head::before, #head::after{
+    content: "";
+    position: absolute;
+    left: 4%;
+    right: 0%;
+    background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66, #00ffff, #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
+    background-size: 500%;
+    width: 92%;
+    height: 70%;
+    z-index: -1;
+    animation: border-animate 40s linear infinite;
+    border-radius: 10px;
+}
+
+#head::after{
+    filter: blur(40px);
+    opacity: 0.1;
+}
+
+#head{
+    background-image: url("img/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: darken;
+    display: flex;
+    margin: 20px;
+    height: 60vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#head #heading{
+    animation: FadeIn 3s;
+    font-size: 35px;
+    color: white;
+    font-family:'Edu VIC WA NT Beginner', cursive ;
+}
+
+#head #desc{
+    animation: FadeIn2 5s;
+    font-size: 15px;
+    color: white;
+    font-family:'Edu VIC WA NT Beginner', cursive ;
+    opacity: 0.3;
+}
+
+#cm-body .social-card img{
+    width: 30px;
+}
+
+#body{
+    background-image: url("img/bg3.jpg");
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: darken;
+    background-size:cover;
+    border: 2px solid white;
+    margin: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about-me #heading{
+    font-family: 'Edu Vic Wa Nt Beginner';
+    text-align: center;
+    font-size: 30px;
+    color: wheat;
+}
+
+#about-me #desc{
+    text-align:center;
+    margin: 20px;
+    font-family: monospace;
+}
+
+#about-me #desc .highlight{
+    text-decoration: underline 1px;
+}
+
+#skills #heading{
+    font-family: 'Edu Vic Wa Nt Beginner';
+    text-align: center;
+    font-size: 30px;
+    color: wheat;
+}
+
+#skills{
+    margin-top: 30px;
+    width: 90%;
+}
+
+#skills li{
+    font-family: monospace;
+    list-style: square;
+}
+
+#skills .highlight{
+    font-size: 18px;
+    font-family: fantasy;
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+#projects{
+    margin-top: 30px;
+    width: 90%;
+}
+
+#projects #heading{
+    font-family: 'Edu Vic Wa Nt Beginner', cursive;
+    text-align: center;
+    font-size: 30px;
+    color: wheat;
+}
+
+#projects .pro-link{
+    background-color: wheat;
+    margin: 20px;
+    font-size: 18px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+#projects .pro-link a{
+    color: black;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+#projects .extra{
+    font-family: cursive;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#contact-me{
+    width: 90%;
+}
+
+#contact-me #heading{
+    font-family: 'Edu Vic Wa Nt Beginner', cursive;
+    text-align: center;
+    font-size: 30px;
+    color: wheat;
+}
+
+#cm-body{
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#cm-body .social-card img{
+    width: 100px;
+    filter: invert();
+}
+
+#mails{
+    margin: 5px;
+    background-color: rgb(17,17,17);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    justify-self: center;
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: 500;
+    font-family: monospace;
+}
+
+#footer{
+    height: 50px;
+    background: gray;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin: 0px;
+    color: black;
+
+}
+
+@keyframes FadeIn{
+    0%{ opacity: 0;}
+    100%{ opacity: 1;}
+}
+
+@keyframes FadeIn2{
+    0%{ opacity: 0;}
+    100%{ opacity: 0.3;}
+}
+
+
+
+
+
+@keyframes border-animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+}

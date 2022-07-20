@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+
+@media only screen and (min-width : 427px){
+
+body{
+    background-color: black;
+}
+
+#navbar a{
+    color: white;
+    font-family: monospace;
+}
+
+
+#head::before, #head::after{
+    content: "";
+    position: absolute;
+    left: 1.4%;
+    right: 0%;
+    background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66, #00ffff, #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
+    background-size: 500%;
+    width: 97.4%;
+    height: 61%;
+    z-index: -1;
+    animation: border-animate 20s linear infinite;
+    border-radius: 10px;
+}
+#head::after{
+    filter: blur(40px);
+    opacity: 0.1;
+}
+
+#head{
+    background-image: url("img/bg-head.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: darken;
+    display: flex;
+    border: 2px solid white;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#head #heading{
+    animation: FadeIn 5s;
+    font-size: 70px;
+    color: white;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+#head #desc{
+    animation: FadeIn2 7s;
+    font-size: 30px;
+    color: white;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    opacity: 0.1;
+}
+
+#body{
+    background-image: url("img/bg1.jpg");
+    background-color: rgba(0,0,0,0.9);
+    background-blend-mode: darken;
+    background-size: cover;
+    display: flex;
+    border: 2px solid white;
+    margin: 20px;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about-me{
+    margin: 20px;
+    margin-top: 30px;
+    color: white;
+}
+
+#about-me #heading{
+    font-family:  cursive;
+    text-align: center;
+    font-size: 40px;
+    color: wheat;
+}
+
+#about-me #desc{
+    text-align: center;
+    margin: 40px;
+    font-size: 25px;
+    font-family: monospace;
+}
+
+#about-me #desc .highlight{
+    text-decoration: underline 1px;
+}
+
+#projects {
+    margin: 20px;
+    margin-top: 50px;
+    width: 50%;
+}
+
+#projects #heading{
+    margin-bottom: 40px;
+    font-family:  cursive;
+    text-align: center;
+    font-size: 40px;
+    color: wheat;
+}
+#projects .pro-link{
+    background-color: wheat;
+    margin: 20px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+#projects .pro-link a{
+    color: black;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+#projects .pro-link a:hover{
+    opacity: 0.5;
+}
+
+#projects .extra{
+    font-family: cursive;
+    margin-top: 50px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#contact-me{
+    margin: 20px;
+    margin-top: 70px;
+    width: 80%;
+}
+
+#contact-me #heading{
+    margin-bottom: 40px;
+    font-family:  cursive;
+    text-align: center;
+    font-size: 40px;
+    color: wheat;
+}
+
+#cm-body{
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#cm-body .social-card img{
+    width: 250px;
+    filter: invert();
+}
+
+#cm-body .social-card img:hover{
+    opacity: 0.5;
+}
+#mails{
+    background-color: rgb(17, 17, 17);
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    justify-self: center;
+    font-size: 25px;
+    color: aliceblue;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+#footer{
+    height: 35px;
+    font-size: 20px;
+    background: gray;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin: 0px;
+    color: black;
+}
+
+#skills #heading{
+    font-family:  cursive;
+    text-align: center;
+    font-size: 40px;
+    color: wheat;
+}
+
+#skills li{
+    font-size: 25px;
+    font-family: cursive;
+    color: white;
+    list-style:square;
+}
+
+#skills .highlight{
+    font-size: 30px;
+    font-family: monospace;
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+@keyframes FadeIn{
+    0%{ opacity: 0;}
+    100%{ opacity: 1;}
+}
+
+@keyframes FadeIn2{
+    0%{ opacity: 0;}
+    100%{ opacity: 0.1;}
+}
+@keyframes border-animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+}
